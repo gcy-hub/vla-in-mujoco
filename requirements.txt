@@ -1,0 +1,12 @@
+accelerate==1.11.0
+datasets==4.1.1
+diffusers==0.35.2
+draccus==0.10.0
+glfw==2.10.0
+huggingface-hub==0.35.3
+lerobot==0.4.1
+matplotlib==3.10.7
+mujoco==3.3.7
+opencv-python==4.12.0.88
+opencv-python-headless==4.12.0.88
+torchcodec==0.3

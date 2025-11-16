@@ -1,0 +1,13 @@
+python -m record.lerobot_record_sim_dataset \
+  --model_path=model/trs_so_arm100/scene.xml \
+  --robot.type=so101_follower \
+  --robot.port=/dev/ttyACM0 \
+  --robot.cameras="{ front: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30, fourcc: "MJPG"}, side: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30,fourcc: "MJPG"}}" \
+  --robot.id=my_awesome_follower_arm \
+  --display_data=true \
+  --dataset.repo_id=gcy_local_data/eval_pi05_sim_test \
+  --dataset.single_task="Open the slide cabinet’s door" \
+  --policy.path=outputs/pi05_training_sim_test/checkpoints/080000/pretrained_model \
+  --dataset.episode_time_s=9999 \
+  --dataset.reset_time_s=0 \
+  --dataset.push_to_hub=false
